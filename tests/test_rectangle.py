@@ -2,12 +2,7 @@ import pytest
 import source.shapes as shapes
 
 
-@pytest.fixture
-def my_rectangle():
-    return shapes.Rectangle(length=10, width=20)
-@pytest.fixture
-def weird_rectangle():
-    return shapes.Rectangle(length=5,width=5)
+
 def test_area(my_rectangle):
     assert my_rectangle.area() == 10 * 20
     
